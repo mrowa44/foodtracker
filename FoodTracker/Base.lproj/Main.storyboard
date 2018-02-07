@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Aca-yH-VLO">
-                                <rect key="frame" x="10" y="40" width="355" height="96.5"/>
+                                <rect key="frame" x="20" y="40" width="335" height="96.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azy-sm-NtN">
                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="20.5"/>
@@ -27,11 +27,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DZm-06-fSN">
-                                        <rect key="frame" x="0.0" y="28.5" width="355" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e42-hT-ckI">
+                                        <rect key="frame" x="0.0" y="28.5" width="335" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRR-LZ-XRb">
                                         <rect key="frame" x="0.0" y="66.5" width="151" height="30"/>
@@ -39,17 +39,16 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="DZm-06-fSN" secondAttribute="trailing" id="Xpg-vV-zu4"/>
+                                    <constraint firstAttribute="trailing" secondItem="e42-hT-ckI" secondAttribute="trailing" id="Bfu-MK-rF8"/>
+                                    <constraint firstItem="e42-hT-ckI" firstAttribute="leading" secondItem="Aca-yH-VLO" secondAttribute="leading" id="xph-0K-yrE"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Aca-yH-VLO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="3nz-2l-XMc"/>
-                            <constraint firstItem="Aca-yH-VLO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="Ijt-Xg-shl"/>
-                            <constraint firstItem="Aca-yH-VLO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SQB-6Y-jDp"/>
-                            <constraint firstItem="Aca-yH-VLO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Zvp-Af-uYr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aca-yH-VLO" secondAttribute="trailing" constant="10" id="nOS-3P-7Y8"/>
+                            <constraint firstItem="Aca-yH-VLO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="9fi-jF-7jV"/>
+                            <constraint firstItem="Aca-yH-VLO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CQV-Fm-h8V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aca-yH-VLO" secondAttribute="trailing" constant="20" id="Ge1-wf-Epp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
